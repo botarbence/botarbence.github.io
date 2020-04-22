@@ -1,6 +1,35 @@
+body {
+  font-family: 'Baloo Bhaina 2', cursive;
+  text-align: center;
+  padding: 0 10%;
+}
+
+.big-header {
+  font-family: 'Seaweed Script', cursive;
+  /* font-family: 'Sacramento', cursive; */
+  font-size: 5rem;
+  padding-bottom: 5%;
+  
+}
+
+.small-header {
+  font-size: 1.2rem;
+}
 p{
   color: red;
 }
 .portrait {
   width: 120px;
+}
+
+.title-section {
+  
+background: linear-gradient(180deg, rgba(224,234,255,1) 59%, rgba(253,255,188,1) 90%, rgba(193,255,154,1) 100%);
+  padding: 7% 10% 20%;
+}
+
+.navbar-container {
+  background: rgb(224,234,255);
+  color: black;
+
 }
