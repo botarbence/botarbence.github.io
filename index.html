@@ -14,37 +14,52 @@
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@400;700&family=Sacramento&family=Seaweed+Script&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/a3b0af6af2.js" crossorigin="anonymous"></script>
   <title>Bence Botar Portfolio</title>
 </head>
 <body>
   <!-- Navbar -->
   <div class="navbar-container">
-    <nav class="navbar navbar-light navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
       
         <a class="navbar-brand" href="#">
           <img class="portrait" src="portrait.png"  alt="">
         </a>
   
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu" >
-          <span class="navbar-toggler-icon"></span>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmenu" > -->
+          <!-- <span class="navbar-toggler-icon"><i class="fas fa-bars toggler-icon"></i></span> -->
+        <!-- </button> -->
+     
+        <button class="navbar-toggler nav-button collapsed" data-target="#navbarmenu" data-toggle="collapse">
+          <span class="line"></span> 
+          <span class="line"></span> 
+          <span class="line"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarmenu">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">About me</span></a>
-            <a class="nav-item nav-link" href="#">Features</a>
-            <a class="nav-item nav-link" href="#">Contact</a>
+            <a class="nav-item nav-link nav-custom" href="#about-section">About me</a>
+            <a class="nav-item nav-link nav-custom" href="#">Features</a>
+            <a class="nav-item nav-link nav-custom" href="#">Contact</a>
           </div>
          </div>
-
-      
-      
     </nav>
   </div>
-  <section class="title-section">
-    <h1 class="big-header">Hi, I'm Bence</h1>
+
+  <!-- Title section -->
+  <section id="title-section" class="title-section">
+    <i class="fas fa-music fa-3x musicicon"></i>
+    <div class="header-wall">
+      <h1 class="big-header">Hi, I'm Bence</h1>
+    </div>
     <h2 class="small-header">I am a Professional Double Bass Player and a Web Development Student</h2>
   </section>
- 
+  <!-- About section -->
+  <section id="about-section" class="about-section">
+    <h3 class="section-header">About me</h3>
+    <p>You are probably wondering, how come a double bass player get into programming. When I was a child, I used to play with my dad's 486 PC. I fiddled around with Turbo Pascal, trying to recreate my favourite games like Commander Keen. Later, in high school, a turned to music, and after graduating I started to work as a double bassist in different orchestras. In 2020, while the Covid-19 epidemic ravaged through the world, I was looking for something the study during the quarantine. By one of my friends recommendation, I tried the freeCodeCamp website - and that's how it all started...</p>
+    <a class=" nav-link nav-custom" href="#title-section">Back</a>
+  </section>
 </body>
 </html>

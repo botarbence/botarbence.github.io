@@ -7,29 +7,113 @@ body {
 .big-header {
   font-family: 'Seaweed Script', cursive;
   /* font-family: 'Sacramento', cursive; */
-  font-size: 5rem;
-  padding-bottom: 5%;
+  font-size: 10rem;
+  color: #ffd460 ;
   
 }
 
 .small-header {
   font-size: 1.2rem;
+  text-align: right;
+  color: #f07b3f;
+}
+
+.section-header {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #2d4059;
+  padding-bottom: 30px;
 }
 p{
-  color: red;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
 .portrait {
   width: 120px;
 }
 
 .title-section {
-  
-background: linear-gradient(180deg, rgba(224,234,255,1) 59%, rgba(253,255,188,1) 90%, rgba(193,255,154,1) 100%);
-  padding: 7% 10% 20%;
+  background: #2d4059 ;
+  padding: 60px 10% 15%;
+  perspective-origin: bottom right;
+
+}
+.musicicon {
+  color: #ffd460;
+  margin-bottom: 40px;
+  animation: ring 3s infinite;
 }
 
+.header-wall {
+  background: linear-gradient(90deg, rgba(54,79,107,1) 30%, rgba(45,64,89,1) 100%);
+  border-radius: 1rem;
+  text-align: left;
+  padding: 20px 0 20px 10px;
+  height: 220px;
+  width: 1300px;
+  transform-origin: top left; 
+  transform: perspective(400px) rotateY(25deg); 
+}
+
+@keyframes ring {
+  0% {
+    transform: rotate(-30deg);
+  } 
+  50% {
+    transform: rotate(30deg);      
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
 .navbar-container {
-  background: rgb(224,234,255);
+  background: #364f6b;
   color: black;
+ 
+}
+
+.navbar {
+  padding: 0 1rem 0 0;
+}
+.navbar-brand {
+  background: linear-gradient(90deg, rgba(24,8,8,1) 50%, rgba(54,79,107,1) 100%);
+  padding: 0 50px 0 0;  
+  margin: 10px 0 10px 0;
+}
+
+a.nav-custom  {
+  color: #ffd460 !important;
+  margin-left: 20px; 
+  border: #364f6b solid 1px;
+  border-radius: 10px;
+  background: #364f6b;
 
 }
+a.nav-custom:hover {
+  color: #ffeab4 !important;
+  border-color: #ffeab4;
+}
+
+.navbar-toggler{
+  width: 50px;
+  height: 50px;
+  background-color: #364f6b;
+}
+.navbar-toggler .line{
+  width: 100%;
+  float: left;
+  height: 5px;
+  background-color: #ffd460;
+  margin-bottom: 5px;
+}
+.toggler-icon {
+  color: #ffd460;
+  background: #364f6b;
+  margin: 0;
+}
+  
+
+.about-section {
+  padding: 15% 10% 3%;
+}
+
