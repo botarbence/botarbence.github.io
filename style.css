@@ -8,14 +8,18 @@ body {
   font-family: 'Seaweed Script', cursive;
   /* font-family: 'Sacramento', cursive; */
   font-size: 10rem;
-  color: #ffd460 ;
-  
+  /* color: #ffd460 ; */
+    
 }
 
 .small-header {
+  position: absolute;
+  top: 400px;
+  left: 60px;
   font-size: 1.2rem;
   text-align: right;
   color: #f07b3f;
+  
 }
 
 .section-header {
@@ -33,11 +37,39 @@ p{
 }
 
 .title-section {
-  background: #2d4059 ;
+  position: relative;
+  background-color: #2d4059;
   padding: 60px 10% 15%;
   perspective-origin: bottom right;
-
+  
 }
+
+.bgd1, .bgd2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.img {
+  width:100%;
+  height: 450px;
+}
+
+.bgd1 {
+  opacity: 0;
+  animation-name: backgroundchange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes backgroundchange {
+  0% {
+    }
+  80% {
+    opacity: 1;
+    color:#3f3f3f;
+    }   
+  }
+
 .musicicon {
   color: #ffd460;
   margin-bottom: 40px;
@@ -45,27 +77,22 @@ p{
 }
 
 .header-wall {
-  background: linear-gradient(90deg, rgba(54,79,107,1) 30%, rgba(45,64,89,1) 100%);
-  border-radius: 1rem;
+  background: transparent;
   text-align: left;
-  padding: 20px 0 20px 10px;
   height: 220px;
   width: 1200px;
+  margin-left: 120px;
   transform-origin: top left; 
   transform: perspective(400px) rotateY(25deg); 
+  animation-name: backgroundchange;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  color: transparent;
+  opacity: 0;
 }
 
-@keyframes ring {
-  0% {
-    transform: rotate(-30deg);
-  } 
-  50% {
-    transform: rotate(30deg);      
-  }
-  100% {
-    transform: rotate(-30deg);
-  }
-}
+
+
 .navbar-container {
   background: #364f6b;
   color: black;
